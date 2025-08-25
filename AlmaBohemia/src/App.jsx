@@ -3,7 +3,7 @@ import './App.css'
 import './assets/variables.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DetalleProducto from './assets/Components/DetalleProducto/DetalleProducto.jsx'
-import TopBar from './assets/Components/topBar/topBar.jsx'
+import TopBar from './assets/Components/topBar/TopBar.jsx'
 import Cart from './assets/Components/Cart/Cart.jsx'
 import Footer from './assets/Components/Footer/Footer'
 import Navbar from './assets/Components/Navbar/Navbar.jsx'
