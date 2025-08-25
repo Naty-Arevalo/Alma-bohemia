@@ -1,0 +1,27 @@
+.topBar-position{
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 15px; */
+    padding: 5px;
+    gap: 2rem;
+    /* background-color:  #338b85; */
+    /* border-radius: 8px; */
+    align-items: center;
+}
+.contacto{
+    font-size: 18px;
+    color: white;
+}
+.icons-topBar{
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+/*Mobile*/
+@media (max-width:768px){
+    .topBar-position{
+        display: none;
+    }
+}

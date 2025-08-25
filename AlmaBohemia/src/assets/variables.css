@@ -1,0 +1,83 @@
+:root{
+    /*Colores*/
+    --color-primario:#872e9d;
+    --color-secundario: #F9F5FF;
+    --color-acento: #8A4FFF;
+    --color-texto: #333;
+    --color-blanco: #ffffff;
+
+
+    /*Fuentes*/
+    /* --font-titulo: "Delius Swash Caps", cursive; */
+    --font-texto: "Open Sans", sans-serif;
+}
+
+/*Tipografia*/
+.font-titulo{
+  font-family:"Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: var(--color-texto);
+  letter-spacing: 0.5px;
+
+}
+.font-subtitulo{
+    font-family: var(--font-texto);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/*Fondos*/
+.bg-fondo{
+    background-color: var(--color-primario);
+}
+.bg-navbar{
+    background: #bb853878;
+}
+.bg-main{
+    background: #bf86343d;
+}
+.bg-aside{
+    background: #bb853869;
+}
+.bg-topBar{
+    background: #bb853838;
+}
+.bg-nav-button{
+    background: #dfc49ceb;
+}
+
+
+
+
+/*Botones*/
+.btn{
+    padding: 0.7rem 1.5rem;
+    border: none;
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn:hover{
+    transform: scale(1.03);
+}
+
+.btn-primario{
+    background-color: rgb(226 197 147 / 77%) !important;
+    color:#333;
+}
+.btn-primario:hover{
+    background-color: rgb(226 197 147 /95%) !important;
+}
+
+.btn-acento{
+    background-color: var(--color-acento);
+
+    color: var(--color-blanco);
+}
+.btn-acento:hover{
+    background-color: #6b2fdd;
+}

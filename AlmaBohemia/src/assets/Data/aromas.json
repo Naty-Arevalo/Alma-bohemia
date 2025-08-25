@@ -1,0 +1,142 @@
+{
+    "aromas":[
+        {
+            "id":1,
+            "nombre":"Maderas de oriente",
+            "uso":"",
+            "caracteristicas":"notas de maderas, que pueden incluir cedro, sándalo o pachulí, combinadas con especias orientales como el clavo o la canela.incluye notas dulces y cálidas como ámbar, vainilla o benjuí."    
+        },
+        {
+            "id":2,
+            "nombre":"Pera, pepino y manzana",
+            "uso":"",
+            "caracteristicas":"combina la dulzura crujiente de la pera, el aroma fresco y herbáceo del pepino y la nota cítrica y dulce de la manzana. La mezcla resulta en una fragancia refrescante, vivaz y perfecta para evocar sensaciones de frescura y vitalidad"    
+        },
+        {
+            "id":3,
+            "nombre":"Pera y flores blancas",
+            "uso":"",
+            "caracteristicas":"combina la dulzura crujiente de la pera con la elegancia y suavidad de diversas flores blancas. La mezcla resulta en una fragancia floral y frutal, con un toque sutil de dulzura y frescura. Tiene una cualidad crujiente y refrescante que crea una sensación fresca y deliciosa."    
+        },
+        {
+            "id":4,
+            "nombre":"Vervena",
+            "uso":"",
+            "caracteristicas":"conocida por su aroma fresco, herbáceo y ligeramente floral. Tiene propiedades calmantes y sedantes, y es utilizada para reducir el estrés y la ansiedad"    
+        },
+        {
+            "id":5,
+            "nombre":"Lavanda",
+            "uso":"",
+            "caracteristicas":"conocida por su aroma floral, dulce y ligeramente herbáceo. Tiene propiedades calmantes y relajantes, lo que la hace popular para aliviar el estrés, la ansiedad y promover un sueño reparador."    
+        },
+        {
+            "id":6,
+            "nombre":"Chicle",
+            "uso":"",
+            "caracteristicas":"conocida por su aroma dulce, afrutado y nostálgico, que evoca recuerdos de la infancia y de los días despreocupados. Este aroma suele incluir notas de frutas como fresa, plátano y uva, combinadas con un toque de azúcar."    
+        },
+        {
+            "id":7,
+            "nombre":"Te verde",
+            "uso":"",
+            "caracteristicas":"aroma fresco, limpio y revitalizante. Es conocida por su capacidad para proporcionar una sensación de calma y claridad mental. Las notas olfativas del té verde son a menudo herbales y ligeramente amargas, con un trasfondo dulce y floral."    
+        },
+        {
+            "id":8,
+            "nombre":"Papaya",
+            "uso":"",
+            "caracteristicas":"aroma tropical, dulce y ligeramente almizclado. Tiene notas afrutadas que recuerdan a la frescura y jugosidad de la fruta, lo que la hace muy atractiva y energizante. Su aroma exótico es refrescante y puede levantar el ánimo."    
+        },
+        {
+            "id":9,
+            "nombre":"Aura",
+            "uso":"",
+            "caracteristicas":"una esencia diseñada para crear una atmósfera o aura particular en un espacio. Este tipo de esencia podría combinar notas frescas, florales, amaderadas y especiadas para evocar diversas sensaciones, desde calma y relajación hasta energía y vitalidad. La idea es capturar una sensación o estado de ánimo que enriquezca el ambiente."    
+        },
+        {
+            "id":10,
+            "nombre":"Bland Balance",
+            "uso":"",
+            "caracteristicas":"combina notas suaves y equilibradas para crear una fragancia armónica y relajante. Suele incluir elementos como la lavanda, el jazmín, el sándalo y el almizcle para ofrecer una experiencia olfativa calmante y placentera. Es perfecta para quienes buscan un aroma que promueva la serenidad y el bienestar."    
+        },
+        {
+            "id":11,
+            "nombre":"Chocolate Naranja",
+            "uso":"",
+            "caracteristicas":"una combinación deliciosa y reconfortante. Esta mezcla proporciona un aroma rico y cálido del chocolate junto con el toque cítrico y refrescante de la naranja. Las notas de chocolate son profundas y dulces, mientras que la naranja añade una vibrante frescura que equilibra la intensidad del chocolate."    
+        },
+        {
+            "id":12,
+            "nombre":"Uva",
+            "uso":"",
+            "caracteristicas":"aroma dulce, afrutado y jugoso. Evoca la frescura de las uvas maduras y tiene una calidad vibrante y energizante. Su fragancia es a menudo rica y dulce, similar al mosto de uva recién prensado."    
+        },
+        {
+            "id":13,
+            "nombre":"Dreams",
+            "uso":"",
+            "caracteristicas":"se diseñó para evocar una sensación de tranquilidad, ensoñación y confort. Puede contener notas suaves y etéreas como la lavanda, el jazmín, el almizcle y otros elementos florales y herbáceos que transportan a un estado de serenidad y reflexión. Este tipo de fragancia es ideal para momentos de relajación y meditación."    
+        },
+        {
+            "id":14,
+            "nombre":"Lima Limón",
+            "uso":"",
+            "caracteristicas":"aroma cítrico, fresco y revitalizante. Esta mezcla captura la acidez brillante de la lima y la dulzura refrescante del limón, creando una fragancia energética y estimulante. Es perfecta para evocar sensaciones de limpieza y frescura."    
+        },
+        {
+            "id":15,
+            "nombre":"Sandia Frambuesa",
+            "uso":"",
+            "caracteristicas":"aroma dulce, afrutado y refrescante. Combina la jugosidad y frescura de la sandía con el toque ligeramente ácido y vibrante de la frambuesa. Esta mezcla crea una fragancia alegre y energizante, perfecta para evocar sensaciones de verano y diversión."    
+        },
+        {
+            "id":16,
+            "nombre":"Flan",
+            "uso":"",
+            "caracteristicas":"aroma cremoso, dulce y reconfortante. Evoca el olor de un flan recién hecho, con notas de caramelo y vainilla que recuerdan a la cocina casera y los postres tradicionales. Es una fragancia rica y indulgente que puede crear una sensación de calidez y confort."    
+        },
+        {
+            "id":17,
+            "nombre":"Patchoulli",
+            "uso":"",
+            "caracteristicas":"aroma terroso, almizclado y ligeramente dulce. Tiene un perfil olfativo profundo y complejo, que puede ser tanto relajante como estimulante. Sus notas distintivas incluyen un toque de madera húmeda y una calidad casi ahumada."    
+        },
+        {
+            "id":18,
+            "nombre":"Vainilla",
+            "uso":"",
+            "caracteristicas":"aroma cálido, dulce y cremoso. Evoca una sensación de confort y familiaridad"    
+        },
+        {
+            "id":19,
+            "nombre":"Coco Lima",
+            "uso":"",
+            "caracteristicas":"combinación tropical y refrescante. Captura la cremosidad dulce del coco y la vivacidad cítrica de la lima. Esta mezcla evoca imágenes de playas soleadas y cocteles exóticos, proporcionando una fragancia energética y revitalizante."    
+        },
+        {
+            "id":20,
+            "nombre":"Pepino Melón",
+            "uso":"",
+            "caracteristicas":"combina la frescura herbácea del pepino con el toque cítrico y revitalizante del limón. Esta mezcla resulta en un aroma refrescante y energizante que es perfecto para proporcionar una sensación de limpieza y frescura."    
+        },
+        {
+            "id":21,
+            "nombre":"Pitanga",
+            "uso":"",
+            "caracteristicas":"aroma dulce, afrutado y ligeramente ácido. tiene un perfil olfativo fresco y exótico que recuerda a una combinación de frutas tropicales. Su fragancia es vibrante y energizante, perfecta para evocar sensaciones de frescura y alegría."    
+        },
+        {
+            "id":22,
+            "nombre":"Cherry",
+            "uso":"",
+            "caracteristicas":"aroma dulce, afrutado y ligeramente ácido. Evoca la frescura y la jugosidad de las cerezas maduras, proporcionando una fragancia vibrante y alegre. Su perfil olfativo es a menudo comparado con un dulce de cereza, lo que la hace muy atractiva y nostálgica."    
+        },
+        {
+            "id":23,
+            "nombre":"Sandia Pepino",
+            "uso":"",
+            "caracteristicas":"aroma refrescante, dulce y ligeramente herbáceo. Esta combinación mezcla la jugosidad y frescura de la sandía con la nota crujiente y acuosa del pepino, creando una fragancia perfecta para evocar sensaciones de verano, frescura y vitalidad."    
+        }
+    ]    
+}

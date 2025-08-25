@@ -1,0 +1,33 @@
+*{
+  margin: 0 ;
+  box-sizing: border-box;
+}
+.app-grid{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 100px;
+  min-height: 100dvh;
+  
+  grid-template-areas: 
+  "header main"
+  "footer footer";
+  /* gap: 10px; */
+}
+
+.main-content{
+  grid-area: main;
+  min-height: 100%;
+  overflow-y: auto;
+}
+/*En desktop*/
+
+@media (max-width : 768px) {
+  .app-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  }
+}

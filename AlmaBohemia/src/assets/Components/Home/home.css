@@ -1,0 +1,130 @@
+
+/*Section Valores*/
+.section-valores{
+    margin: 15px;
+    padding: 15px;
+}
+.content-valores{
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    flex-wrap: wrap;
+
+}
+.valores-box{
+    display: flex;
+    background: beige;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+.text-valores{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    padding: 5px;
+}
+.icon-valores{
+    font-size: 25px;
+}
+
+/*Section Categories*/
+.section-categories{
+    margin: 15px;
+    padding: 15px;
+}
+.categories-content{
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) ;
+    gap:1rem;
+    padding: 1rem;
+
+}
+.category-card{
+    position: relative;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    text-decoration: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    /* box-shadow: 0 4px 30px rgba(0,0,0,0.1); */
+    box-shadow: 14px 13px 5px -4px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 14px 13px 5px -4px rgba(0,0,0,0.55);
+    -moz-box-shadow: 14px 13px 5px -4px rgba(0,0,0,0.55);
+
+}
+.category-card:hover{
+    transform: scale(1.03);
+}
+.img-categories{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    filter: brightness(0.7);
+    
+}
+.category-card:hover .img-categories:hover{
+    filter:blur(2px) brightness(0.8)
+}
+.text-category{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+
+
+/*Section Sobre Mi Intro*/
+.section-sobremi-intro{
+    margin: 15px;
+    padding: 15px;
+
+}
+.btn-mas-info{
+    font-weight: bold;
+}
+
+
+.linea-divisoria{
+    width: 80%;
+    margin: 15px auto;
+    border: none;
+    border-top: 2px solid #333;
+}
+
+@media (max-width: 768px){
+    .content-valores{
+        gap: 0.5rem;
+        
+    }
+    .font-titulo{
+        font-size: 2rem;
+    }
+    .section-valores{
+        margin:0;
+        padding: 5px;
+    }
+    .font-titulo{
+        text-align: center;
+    }
+}

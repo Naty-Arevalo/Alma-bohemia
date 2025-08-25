@@ -1,0 +1,90 @@
+{
+    "productos":[
+        
+    {
+        "id": 1,
+        "nombre": "Vela 1",
+        "categoria": "velas",
+        "img":[
+            "/img/vela1.jpg",
+            "/img/vela2.jpg",
+            "/img/vela3.jpg"
+        ], 
+        "se rellena": true,
+        "precio": 100
+    },
+    {
+        "id": 2,
+        "nombre": "Vela 2",
+        "categoria": "difusores",
+        "img":[
+            "/img/vela2.jpg",
+            "/img/vela3.jpg",
+            "/img/vela4.jpg"
+        ], 
+        "se rellena": true,
+        "precio": 150
+    },
+    {
+        "id": 3,
+        "nombre": "Vela 3",
+        "categoria": "velas",
+        "img": [
+            "/img/vela3.jpg",
+            "/img/vela2.jpg",
+            "/img/vela1.jpg"
+        ],
+        "se rellena": true,
+        "precio": 200
+    },
+    {
+        "id": 4,
+        "nombre": "Vela 4",
+        "categoria": "velas",
+        "img":[
+            "/img/vela4.jpg",
+            "/img/vela5.jpg",
+            "/img/vela6.jpg"
+        ], 
+        "se rellena": true,
+        "precio": 250
+    },
+    {
+        "id": 5,
+        "nombre": "Vela 5",
+        "categoria": "velas",
+        "img":[
+            "/img/vela5.jpg",
+            "/img/vela4.jpg",
+            "/img/vela3.jpg"
+        ] ,
+        "se rellena": true,
+        "precio": 300
+    },
+    {
+        "id": 6,
+        "nombre": "Vela 6",
+        "categoria": "carameleras",
+        "img": [
+            "/img/vela6.jpg",
+            "/img/vela5.jpg",
+            "/img/vela4.jpg"
+        ],
+        "se rellena": true,
+        "precio": 350
+    },
+    {
+        "id": 7,
+        "nombre": "Vela 7",
+        "categoria": "velas",
+        "img": [
+            "/img/vela7.jpg",
+            "/img/vela6.jpg",
+            "/img/vela5.jpg"
+        ],
+        "se rellena": true,
+        "precio": 400
+    }
+
+]
+}

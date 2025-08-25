@@ -1,0 +1,23 @@
+.footer{
+    grid-area: footer;
+    /* background-color: blue; */
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   gap: 2rem;
+   margin: 0;
+}
+.text-footer{
+    margin: 0.25rem 0.25rem;
+    color:#af976b;
+
+}
+@media (max-width:768px){
+    .footer{
+        flex-direction: column;
+        gap: 0.10rem;
+    }
+}
