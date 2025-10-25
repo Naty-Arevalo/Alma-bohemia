@@ -62,7 +62,7 @@ export default function SliderImagenes({ imagenes }) {
         <div ref={thumbnailRef} className="keen-slider thumbnail">
           {imagenes.map((img, i) => (
             <div className="keen-slider__slide" key={i}>
-              <img src={img} alt={`Imagen ${i}`} />
+              <img src={img} alt={`Imagen ${i}`}/>
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 import { useState } from "react";
-import { FaBars, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaBars, FaInstagram, FaRegUser, FaWhatsapp } from "react-icons/fa";
 
 import CartWidget from "../topBar/CartWidget";
 
@@ -16,6 +16,7 @@ const Navbar = () => {
     {to:'homespray', label:'Home Spray'},
     {to:'complementos', label:'Complementos'},
     {to:'sobremi', label:'Sobre Mi'},
+    
   ]
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
     <div className="navbar-content bg-aside">
       <aside className=" aside">
           <NavLink to={"/"}>
-            <img className="logo-navbar" src="/logo-alma1.png" alt="logo" />
+            <img className="logo-navbar mb-4" src="/logo-alma1.png" alt="logo" />
           </NavLink>
           {/* Menu hamburguesa */}
           <button
@@ -51,6 +52,7 @@ const Navbar = () => {
       <div className="topBar-mobile">
         <a href="#" target="_blank" rel="noopener noreferrer" className="icons-topBar"><FaInstagram /></a>
         <a href="#" target="_blank" rel="noopener noreferrer" className="icons-topBar"><FaWhatsapp /></a>
+        <Link to = {"/AuthPage"} className="text-white text-xl"><FaRegUser /></Link>
         <Link to={"/carrito"} className="icons-topBar"><CartWidget/></Link>
       </div>
     </div>

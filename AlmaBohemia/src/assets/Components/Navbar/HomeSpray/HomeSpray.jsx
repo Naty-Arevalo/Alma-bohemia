@@ -1,9 +1,53 @@
-import React from 'react'
+import { useEffect } from "react";
+import {useSelector, useDispatch} from 'react-redux'
+import { fetchProductos } from "../../../../store/productosSlice";
 
-const HomeSpray = () => {
-  return (
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore qui inventore deleniti quos porro dicta. Asperiores ea veniam nam fugit laboriosam sit facere ipsam rerum cum earum, voluptatem quaerat nesciunt ipsa voluptatum delectus dolorem accusamus voluptates architecto. Unde, eveniet?</p>
+import { Link } from "react-router-dom";
+
+const HomeSpray = () =>{
+  const dispatch = useDispatch()
+  const {items: productos,loading, error} = useSelector(state => state.productos)
+
+
+  useEffect(()=>{
+    dispatch(fetchProductos())
+  },[dispatch])
+
+  const difusores = productos.filter(p => p.categoria === 'homeSpray')
+
+  // const handleAgregarAlCarrito = (producto) =>{
+  //   dispatch(agregarAlCarrito(producto))
+  //   console.log( 'se agrego el producto: ', producto)
+  // }
+
+  return(
+    <div className="producto1">
+      <h1 className="font-titulo titulo-producto">Home Spray</h1>
+      <div className="product-content">
+        {
+          loading ? (
+            <p className="font-subtitulo">Cargando</p>
+          ) : error ? (
+            <p>{error}</p>
+          ): (
+            difusores.map ((prod) =>(
+              <div key={prod.id} className="card">
+                <Link to={`/producto/${prod.id}`} className="link-card">
+                  <img 
+                  src={prod.img && prod.img.length > 0 ? prod.img[0] : '/img/logo-alma1.png'}
+                  alt={prod.nombre} 
+                  />
+                
+                
+              <h1 className="card-title">{prod.nombre}</h1>
+              <p className="card-price"> ${Number(prod.precio).toFixed(2)}</p>
+              </Link>
+              {/* <button onClick={()=> (handleAgregarAlCarrito(prod))} className="btn btn-primario">Agregar Al Carrito</button> */}
+              </div>
+            )
+          )
+        )}
+      </div>
     </div>
   )
 }

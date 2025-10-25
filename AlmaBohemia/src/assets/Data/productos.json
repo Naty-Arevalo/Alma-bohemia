@@ -3,88 +3,113 @@
         
     {
         "id": 1,
-        "nombre": "Vela 1",
+        "nombre": "Caramelera",
         "categoria": "velas",
         "img":[
-            "/img/vela1.jpg",
-            "/img/vela2.jpg",
-            "/img/vela3.jpg"
+            "/comprimidas/caramelera1.webp",
+            "/comprimidas/caramelera2.webp",
+            "/comprimidas/caramelera3.jpg"
         ], 
         "se rellena": true,
         "precio": 100
     },
     {
         "id": 2,
-        "nombre": "Vela 2",
+        "nombre": "Difusor Con Varillas",
         "categoria": "difusores",
         "img":[
-            "/img/vela2.jpg",
-            "/img/vela3.jpg",
-            "/img/vela4.jpg"
+            "/comprimidas/difusorVarilla1.webp",
+            "/comprimidas/difusorVarilla2.webp",
+            "/comprimidas/difusorVarilla3.webp"
         ], 
         "se rellena": true,
         "precio": 150
     },
     {
         "id": 3,
-        "nombre": "Vela 3",
+        "nombre": "Caramelera Grande Con Pie",
         "categoria": "velas",
         "img": [
-            "/img/vela3.jpg",
-            "/img/vela2.jpg",
-            "/img/vela1.jpg"
+            "/comprimidas/caramelera-gde-5.webp",
+            "/comprimidas/caramelera-gde-1.webp",
+            "/comprimidas/caramelera-gde-2.webp"
         ],
         "se rellena": true,
         "precio": 200
     },
     {
         "id": 4,
-        "nombre": "Vela 4",
+        "nombre": "Circo",
         "categoria": "velas",
         "img":[
-            "/img/vela4.jpg",
-            "/img/vela5.jpg",
-            "/img/vela6.jpg"
+            "/comprimidas/circo1.webp",
+            "/comprimidas/circo2.webp",
+            "/comprimidas/circo3.webp"
         ], 
         "se rellena": true,
         "precio": 250
     },
     {
         "id": 5,
-        "nombre": "Vela 5",
+        "nombre": "Vaso de Vidrio",
         "categoria": "velas",
         "img":[
-            "/img/vela5.jpg",
-            "/img/vela4.jpg",
-            "/img/vela3.jpg"
+            "/comprimidas/vasoVidrio4.webp",
+            "/comprimidas/vasoVidrio3.webp",
+            "/comprimidas/vasoVidrio1.webp"
         ] ,
         "se rellena": true,
         "precio": 300
     },
     {
         "id": 6,
-        "nombre": "Vela 6",
-        "categoria": "carameleras",
+        "nombre": "Difusor de Auto",
+        "categoria": "difusores",
         "img": [
-            "/img/vela6.jpg",
-            "/img/vela5.jpg",
-            "/img/vela4.jpg"
+            "/comprimidas/difuAuto1.webp",
+            "/comprimidas/difuAuto2.webp",
+            "/comprimidas/difuAuto3.webp"
         ],
         "se rellena": true,
         "precio": 350
     },
     {
         "id": 7,
-        "nombre": "Vela 7",
+        "nombre": "Pecera Chica",
         "categoria": "velas",
         "img": [
-            "/img/vela7.jpg",
-            "/img/vela6.jpg",
-            "/img/vela5.jpg"
+            "/comprimidas/peceraChica1.webp",
+            "/comprimidas/peceraChica2.webp",
+            "/comprimidas/peceraChica3.webp"
+        ],
+        "se rellena": true,
+        "precio": 400
+    },
+    {
+        "id": 8,
+        "nombre": "Home Spray Con Gatillo",
+        "categoria": "homeSpray",
+        "img": [
+            "/comprimidas/homeSpray1.webp",
+            "/comprimidas/HomeSpray2.webp",
+            "/comprimidas/HomeSpray3.webp"
+        ],
+        "se rellena": true,
+        "precio": 400
+    },
+    {
+        "id": 9,
+        "nombre": "Home Spray Tubo",
+        "categoria": "homeSpray",
+        "img": [
+            "/comprimidas/HomeSprayPlastico1.webp",
+            "/comprimidas/HomeSprayPlastico2.webp",
+            "/comprimidas/homeSprayPlastico3.webp"
         ],
         "se rellena": true,
         "precio": 400
     }
+
 
 ]
 }

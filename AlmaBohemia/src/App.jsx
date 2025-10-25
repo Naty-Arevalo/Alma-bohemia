@@ -2,24 +2,28 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
 import './assets/variables.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DetalleProducto from './assets/Components/DetalleProducto/DetalleProducto.jsx'
-import TopBar from './assets/Components/topBar/TopBar.jsx'
-import Cart from './assets/Components/Cart/Cart.jsx'
-import Footer from './assets/Components/Footer/Footer'
-import Navbar from './assets/Components/Navbar/Navbar.jsx'
-import Home from './assets/Components/Home/Home.jsx'
-import Producto1 from'./assets/Components/Navbar/Producto1/Producto1.jsx'
-import Producto2 from './assets/Components/Navbar/Producto2/Producto2.jsx'
-import Producto3 from './assets/Components/Navbar/Producto3/Producto3.jsx'
-import Difusores from './assets/Components/Navbar/Difusores/Difusores.jsx'
-import HomeSpray from './assets/Components/Navbar/HomeSpray/HomeSpray.jsx'
-import Complementos from './assets/Components/Navbar/Complementos/Complementos.jsx'
-import SobreMi from './assets/Components/Navbar/SobreMi/SobreMi.jsx'
 import { useSelector } from 'react-redux';
 import { selectCartItems } from './store/carritoSlice.js';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Navbar from './assets/Components/Navbar/Navbar.jsx'
+import TopBar from './assets/Components/topBar/TopBar.jsx'
+import Footer from './assets/Components/Footer/Footer'
+
+const Home= lazy(()=> import ( './assets/Components/Home/Home.jsx'))
+const Producto1 = lazy(()=> import('./assets/Components/Navbar/Producto1/Producto1.jsx') )
+const Producto2 = lazy (()=> import ('./assets/Components/Navbar/Producto2/Producto2.jsx'))
+const Producto3 = lazy (()=> import('./assets/Components/Navbar/Producto3/Producto3.jsx'))
+const Difusores = lazy (()=> import ('./assets/Components/Navbar/Difusores/Difusores.jsx'))
+const HomeSpray = lazy (()=> import ('./assets/Components/Navbar/HomeSpray/HomeSpray.jsx'))
+const Complementos = lazy (()=> import ('./assets/Components/Navbar/HomeSpray/HomeSpray.jsx'))
+const SobreMi = lazy (()=> import ('./assets/Components/Navbar/SobreMi/SobreMi.jsx'))
+const DetalleProducto = lazy (()=> import ('./assets/Components/DetalleProducto/DetalleProducto.jsx'))
+const Cart = lazy (()=> import ('./assets/Components/Cart/Cart.jsx'))
+const AuthPAge = lazy (()=> import ('./assets/Components/topBar/login/AuthPage.jsx'))
+const PanelAdmin = lazy (()=> import ('./assets/Components/Panel de Admin/AdminPanel.jsx'))
+
 
 function App () {
  
@@ -39,6 +43,7 @@ function App () {
         <Navbar/>
       <div className='bg-main main-content'>
       <TopBar/>
+    <Suspense fallback= {<div>Cargando...</div>}>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Producto1' element={<Producto1/>}/>
@@ -50,7 +55,10 @@ function App () {
         <Route path='/producto/:id' element={<DetalleProducto/>}/>
         <Route path='/carrito' element={<Cart/>}/>
         <Route path='/SobreMi' element={<SobreMi/>}/>
-      </Routes>  
+        <Route path='/AuthPage' element={<AuthPAge/>}/>
+        <Route path='/PanelAdmin' element={<PanelAdmin/>}/>
+      </Routes> 
+      </Suspense> 
       </div>
       <Footer/>
     </div>
