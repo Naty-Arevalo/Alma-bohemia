@@ -34,7 +34,7 @@ const Difusores = () =>{
               <div key={prod.id} className="card">
                 <Link to={`/producto/${prod.id}`} className="link-card">
                   <img 
-                  src={prod.img && prod.img.length > 0 ? prod.img[0] : '/img/logo-alma1.png'}
+                  src={prod.imagenes && prod.imagenes.length > 0 ? prod.imagenes[0] : '/img/logo-alma1.png'}
                   alt={prod.nombre} 
                   />
                 

@@ -94,7 +94,7 @@ export default function DetalleProducto() {
         <h1 className="font-titulo title-font">Detalle de producto</h1>
         <div className="producto-detalle">
 
-        {producto.img?.length > 0 && <SliderImagenes imagenes={producto.img}/>}
+        {producto.imagenes?.length > 0 && <SliderImagenes imagenes={producto.imagenes}/>}
 
           {/* Detalle del producto*/}
           <div className="info-producto">

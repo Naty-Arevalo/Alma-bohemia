@@ -13,7 +13,7 @@ import Footer from './assets/Components/Footer/Footer'
 
 const Home= lazy(()=> import ( './assets/Components/Home/Home.jsx'))
 const Producto1 = lazy(()=> import('./assets/Components/Navbar/Producto1/Producto1.jsx') )
-const Producto2 = lazy (()=> import ('./assets/Components/Navbar/Producto2/Producto2.jsx'))
+const Producto2 = lazy (()=> import ('./assets/Components/Navbar/Aromas/Producto2.jsx'))
 const Producto3 = lazy (()=> import('./assets/Components/Navbar/Producto3/Producto3.jsx'))
 const Difusores = lazy (()=> import ('./assets/Components/Navbar/Difusores/Difusores.jsx'))
 const HomeSpray = lazy (()=> import ('./assets/Components/Navbar/HomeSpray/HomeSpray.jsx'))

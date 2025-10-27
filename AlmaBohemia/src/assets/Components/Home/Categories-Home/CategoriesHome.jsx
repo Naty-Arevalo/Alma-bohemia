@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const CategoriesHome = () => {
 
   const linksCategory = [
-    {name:"Velas", to:"/Producto1", img:"/img/VELAS.jpg"},
+    {name:"Velas", to:"/Producto1", img:"/comprimidas/coponPintado4.webp"},
     {name:"Difusores", to:"/Difusores", img:"/img/difusor-vidrio.jpg"},
     {name:"Home Spray", to:"/HomeSpray", img:"/img/difusor-auto.jpg"},
     {name:"Complementos", to:"/Complementos", img:"/img/bandejas-ceramica.jpg"},

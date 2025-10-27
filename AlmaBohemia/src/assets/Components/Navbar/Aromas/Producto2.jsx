@@ -27,6 +27,8 @@ const Producto2 = () => {
             <div key={aroma.id} className="list-container-aromas">
               <h2 className="title-aromas">{aroma.nombre}</h2>
               <p className="parrafo-aromas">{aroma.caracteristicas}</p>
+              <img src={aroma.imagen} alt="" />
+              <p className="bg-black p-3 text-white">{aroma.precio}</p>
             </div>
           ))
         )

@@ -13,7 +13,7 @@ const HomeSpray = () =>{
     dispatch(fetchProductos())
   },[dispatch])
 
-  const difusores = productos.filter(p => p.categoria === 'homeSpray')
+  const difusores = productos.filter(p => p.categoria === 'home spray')
 
   // const handleAgregarAlCarrito = (producto) =>{
   //   dispatch(agregarAlCarrito(producto))
@@ -34,7 +34,7 @@ const HomeSpray = () =>{
               <div key={prod.id} className="card">
                 <Link to={`/producto/${prod.id}`} className="link-card">
                   <img 
-                  src={prod.img && prod.img.length > 0 ? prod.img[0] : '/img/logo-alma1.png'}
+                  src={prod.imagenes && prod.imagenes.length > 0 ? prod.imagenes[0] : '/img/logo-alma1.png'}
                   alt={prod.nombre} 
                   />
                 

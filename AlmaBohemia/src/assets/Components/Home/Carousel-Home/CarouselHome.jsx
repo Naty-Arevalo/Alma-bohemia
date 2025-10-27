@@ -8,7 +8,7 @@ function CarouselHome() {
     <Carousel  className='carousel-content'>
       <Carousel.Item  className='carousel-item'>
         {/* <ExampleCarouselImage text="First slide" /> */}
-        <img src="./img/foto-hero.jpg" alt="" className='img-carousel' />
+        <img src="./comprimidas/hero.webp" alt="" className='img-carousel' />
         <Carousel.Caption>
           <h3 className='font-subtitulo'>Aromas que abrazan tu espacio</h3>
           <p className='text-carousel'>Velas de soja, difusores, home sprays y detalles hechos a mano con
@@ -17,7 +17,7 @@ function CarouselHome() {
       </Carousel.Item>
       <Carousel.Item className='carousel-item'>
         {/* <ExampleCarouselImage text="Second slide" /> */}
-        <img src="./img/carousel2.jpg" alt="" className='img-carousel'/>
+        <img src="./comprimidas/souvenir.webp" alt="" className='img-carousel'/>
         <Carousel.Caption>
           <h3 className='font-subtitulo'>Souvenirs para eventos</h3>
           <p className='text-carousel'> Hacemos souvenirs personalizados para bodas, cumpleaños, baby showers y más.</p>
