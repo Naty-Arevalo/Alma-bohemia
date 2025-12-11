@@ -15,7 +15,7 @@ function Authform ( { type ,  onSubmit }){
     return(
         <form 
         onSubmit={handleSubmit} 
-        className="flex flex-col gap-3 p-4 border rounded-xl w-3/4 mx-auto mt-4 shadow-xl bg-[#bb853878]">
+        className="flex flex-col gap-3 p-4 border rounded-xl w-3/4 mx-auto mt-4 shadow-xl bg-[#B88A7A]/47">
             <h2 className="italic text-xl font-bold text-center">
                 {type === "loguin" ? "Iniciar Sesion" : "Crear Cuenta"}
             </h2>

@@ -18,7 +18,8 @@ const Destacado = () => {
       const querySnapshot = await getDocs(q)
 
       if(!querySnapshot.empty) {
-        setProducto(querySnapshot.docs[0].data())
+        const doc = querySnapshot.docs[0];
+        setProducto({ id: doc.id, ...doc.data() })
       }else{
         console.log('no hay productos destacados')
       }
@@ -33,9 +34,12 @@ const Destacado = () => {
             <img src={producto.imagenes[0]} alt={producto.nombre}  className='img-recomendado'/>
           )}
             <div className='recomendado-content'>
-                <h3 className='font-subtitulo'>Pack Relax</h3>
-                <p className='text'>Nuestro set mas elegido: vela aromatica, difusor de varillas y home spray. Ideal para regalar o para mimarte. Fragacias a eleccion y presentacion artesanal</p>
-                <Link to='/producto1' className='btn-Link'> Ver más</Link>
+                <h3 style={{color: 'var(--color-texto)'}}>{producto?.nombre || 'Pack Relax'}</h3>
+                <p className='texto-relax'>
+                  {producto?.descripcion || 'Nuestro set más elegido: vela aromática, difusor de varillas y home spray. Ideal para regalar o para mimarte. Fragancias a elección y presentación artesanal.'}
+                </p>
+                <p className='precio-destacado'>${producto?.precio?.toFixed(2) || ''}</p>
+                <Link to={producto?.id ? `/producto/${producto.id}` : '/producto1'} className='btn-Link'> Ver más</Link>
             </div>
         </div>
     </section>

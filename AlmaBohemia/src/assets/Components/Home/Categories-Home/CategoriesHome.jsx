@@ -11,7 +11,7 @@ const CategoriesHome = () => {
   ]
   return (
     <section className="section-categories ">
-        <h1 className="font-titulo">Nuestras Categorias</h1>
+        <h1 className="font-titulo" style={{color: 'var(--color-texto)'}}>Nuestras Categorías</h1>
         <div  className="categories-content">
         {linksCategory.map((linkCateg,i)=>(
           

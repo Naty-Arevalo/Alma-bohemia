@@ -8,6 +8,7 @@ import { fetchProductos } from "../../../store/productosSlice";
 import SliderImagenes from "./Slider-imagenes/SliderImagenes";
 import {setProductoSeleccionado, limpiarProductoSeleccionado} from '../../../store/detalleProductoSlice'
 import { toast } from "react-toastify";
+import Loading from "../Loading/Loading";
 
 export default function DetalleProducto() {
   const { id } = useParams();
@@ -62,8 +63,8 @@ export default function DetalleProducto() {
     }
   }, [aromaSeleccionado]);
 
-  if (loading || !producto) return <p style={{ padding: "2rem" }}>Cargando producto...</p>;
-  if (error) return <p style={{ padding: "2rem" }}>Error: {error}</p>;
+  if (loading || !producto) return <Loading message="Cargando producto..." />;
+  if (error) return <div style={{ padding: "2rem", textAlign: "center" }}><p style={{color: 'var(--color-texto)', fontSize: '1.2rem'}}>Error: {error}</p></div>;
 
 
   const handleAgregar = () => {
@@ -82,8 +83,8 @@ export default function DetalleProducto() {
 
     toast.success('Producto agregado al carrito!',{
       style:{
-        backgraund: '#333',
-        color:'#fff'
+        background: 'var(--color-primario)',
+        color: 'var(--color-blanco)'
       }
     })
   };

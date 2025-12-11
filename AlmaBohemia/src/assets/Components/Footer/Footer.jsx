@@ -2,10 +2,16 @@
 import './footer.css'
 const Footer = () => {
   return (
-    <div className='bg-aside footer'>
-        <p className='text-footer'>Desarrollado por: Narev</p>
-        <p className='text-footer'> Todos los derechos reservados</p>
-    </div>
+    <footer className='footer'>
+      <div className='footer-content'>
+        <p className='footer-text'>
+          Desarrollado por Narev
+        </p>
+        <p className='footer-text'>
+          © {new Date().getFullYear()} Alma Bohemia. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   )
 }
 

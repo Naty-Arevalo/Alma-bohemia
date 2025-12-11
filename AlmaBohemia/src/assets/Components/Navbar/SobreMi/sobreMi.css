@@ -16,7 +16,7 @@
 .text-description{
     font-size: 18px;
     font-style: italic;
-    color:#333;
+    color: var(--color-texto);
     padding: 25px;
     /* text-align: center; */
     letter-spacing:1px ;

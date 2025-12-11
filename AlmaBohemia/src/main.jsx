@@ -1,7 +1,9 @@
 
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import App from './App.jsx'
+import './index.css'
+import './App.css'
+
 //import { FiltersProvider } from './context/Filters.jsx'
 import {Provider} from 'react-redux'
 import {store} from './store'

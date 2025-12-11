@@ -4,13 +4,18 @@ import filtroReducer from './filtroSlice'
 import carritoReducer from './carritoSlice'
 import  aromasReducer  from './aromasSlice'
 import detalleProductoReducer from './detalleProductoSlice'
+import { productsApi } from '../assets/service/productosService'
 
 export const store = configureStore({
     reducer:{
         productos: productodReducer,
+        [productsApi.reducerPath]: productsApi.reducer,
         filtro: filtroReducer,
         carrito: carritoReducer,
         aromas: aromasReducer,
         detalleProducto: detalleProductoReducer,
-    }
+    },
+    
+    middleware:(getDefaultMiddleware) =>
+        getDefaultMiddleware().concat(productsApi.middleware),
 })

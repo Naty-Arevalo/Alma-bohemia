@@ -1,19 +1,9 @@
-import { useEffect } from "react";
-import {useSelector, useDispatch} from 'react-redux'
-import { fetchProductos } from "../../../../store/productosSlice";
-
+import { useGetProductosByCategoryQuery } from "../../../service/productosService";
 import { Link } from "react-router-dom";
 
 const HomeSpray = () =>{
-  const dispatch = useDispatch()
-  const {items: productos,loading, error} = useSelector(state => state.productos)
+  const {data: productos = [], isLoading, isError, error} = useGetProductosByCategoryQuery('home spray')
 
-
-  useEffect(()=>{
-    dispatch(fetchProductos())
-  },[dispatch])
-
-  const difusores = productos.filter(p => p.categoria === 'home spray')
 
   // const handleAgregarAlCarrito = (producto) =>{
   //   dispatch(agregarAlCarrito(producto))
@@ -25,12 +15,12 @@ const HomeSpray = () =>{
       <h1 className="font-titulo titulo-producto">Home Spray</h1>
       <div className="product-content">
         {
-          loading ? (
+          isLoading ? (
             <p className="font-subtitulo">Cargando</p>
-          ) : error ? (
-            <p>{error}</p>
+          ) : isError ? (
+            <p>{error.message || 'No se pudieron encontrar los productos'}</p>
           ): (
-            difusores.map ((prod) =>(
+            productos.map ((prod) =>(
               <div key={prod.id} className="card">
                 <Link to={`/producto/${prod.id}`} className="link-card">
                   <img 

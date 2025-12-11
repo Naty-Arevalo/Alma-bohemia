@@ -1,51 +1,97 @@
 .section-recomendado{
-    background-color: #fff8f4;
+    background-color: var(--color-principal);
     padding: 2rem;
     border-radius: 1rem;
     margin: 3rem auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .recomendado-box{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     gap: 2rem;
+    justify-content: center;
 }
 .img-recomendado{
     width: 100%;
-    max-width: 200px;
+    min-width: 300px;
+    max-width:350px;
+    height:250px  ;
+    object-fit:cover;
     border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(184, 138, 122, 0.4);
+    margin-right: 5rem;
 
 }
 .recomendado-content{
     flex: 1;
     min-width: 250px;
+    max-width: 400px;
 }
-.text{
-   font-size: 1rem;
-   margin-bottom: 1rem;
-   color: #555;
+
+.recomendado-content h3{
+    font-family: var(--font-texto);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.texto-relax{
+   font-size: 1.1rem;
+   margin-bottom: 1.5rem;
+   color: var(--color-texto);
+   line-height: 1.7;
+   font-family: var(--font-texto);
+}
+
+.precio-destacado{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+    margin-bottom: 1.5rem;
+    font-family: var(--font-texto);
 }
 .btn-Link{
     display: inline-block;
-    background-color: var(--color-acento, #d19a86);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-acento) 0%, var(--color-primario) 100%);
+    color: var(--color-blanco);
+    padding: 0.75rem 2rem;
     text-decoration: none;
-    border-radius: 2rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(212, 165, 116, 0.4);
+    font-family: var(--font-texto);
 }
+
 .btn-Link:hover{
-    background-color: #bb7e6a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 165, 116, 0.5);
+}
+
+.btn-Link:active{
+    transform: translateY(0);
 }
 
 @media (max-width :768px){
     .section-recomendado{
         width: 80%;
         padding: 1rem;
+    }
+    .recomendado-box{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .img-recomendado{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 200px;
+        margin-right: 0;
     }
     
 }

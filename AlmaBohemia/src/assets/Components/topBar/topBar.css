@@ -1,22 +1,38 @@
 .topBar-position{
     display: flex;
     justify-content: flex-end;
-    /* margin-right: 15px; */
-    padding: 5px;
-    gap: 2rem;
-    /* background-color:  #338b85; */
-    /* border-radius: 8px; */
+    padding: 0.75rem 1rem;
+    gap: 1.5rem;
     align-items: center;
+    background: var(--color-secundario);
+    border-radius: 12px;
+    margin: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(184, 138, 122, 0.1);
+    border: 1px solid rgba(184, 138, 122, 0.15);
 }
+
 .contacto{
-    font-size: 18px;
-    color: white;
+    font-size: 16px;
+    color: var(--color-texto);
+    margin-bottom: 0;
+    font-family: var(--font-texto);
+    font-weight: 500;
+    opacity: 0.8;
 }
+
 .icons-topBar{
-    color: white;
-    font-size: 25px;
-    padding: 8px;
-    margin-right: 8px;
+    color: var(--color-primario);
+    font-size: 22px;
+    padding: 0.5rem;
+    margin-right: 0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.icons-topBar:hover{
+    background: rgba(184, 138, 122, 0.15);
+    color: var(--color-acento);
+    transform: scale(1.1);
 }
 
 /*Mobile*/

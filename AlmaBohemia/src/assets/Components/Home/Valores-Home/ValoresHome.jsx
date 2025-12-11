@@ -5,7 +5,7 @@ import { FaUserCheck } from "react-icons/fa6"
 const ValoresHome = () => {
   return (
     <section className="section-valores">
-            <h1 className="font-titulo">Nuestros Valores</h1>
+            <h1 className="font-titulo" style={{color: 'var(--color-texto)'}}>Nuestros Valores</h1>
             <div className="content-valores">
               <div className="valores-box">
                 <GiCandleLight className="icon-valores" />
@@ -13,7 +13,7 @@ const ValoresHome = () => {
               </div>
               <div className="valores-box">
                 <GiPlantSeed className="icon-valores" />
-                <p className="text-valores">sustentable con el planeta</p>
+                <p className="text-valores">Sustentable con el planeta</p>
               </div>
               <div className="valores-box">
                 <FaUserCheck className="icon-valores" />

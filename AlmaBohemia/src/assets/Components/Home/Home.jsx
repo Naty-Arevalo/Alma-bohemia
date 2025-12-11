@@ -4,6 +4,8 @@ import Carousel from "./Carousel-Home/CarouselHome";
 import Destacado from "./Carousel-Home/Destacado/Destacado";
 import ValoresHome from "./Valores-Home/ValoresHome";
 import CategoriesHome from "./Categories-Home/CategoriesHome";
+import ProductosDestacados from "./ProductosDestacados-Home/ProductosDestacados";
+import BannerPromo from "./BannerPromo-Home/BannerPromo";
 
 const Home = () => {
   return (
@@ -12,22 +14,28 @@ const Home = () => {
    
       <Carousel />
       <hr className="linea-divisoria"/>
+      <BannerPromo />
+      <hr className="linea-divisoria"/>
       <ValoresHome/>
       <hr className="linea-divisoria"/>
       <CategoriesHome/>
+      <hr className="linea-divisoria"/>
+      <ProductosDestacados />
       <hr className="linea-divisoria"/>
       <Destacado />
       <hr className="linea-divisoria"/>
       <section className="section-sobremi-intro">
         <h1 className="font-titulo">Sobre mí</h1>
-        <p className="text-description">
-          Soy Be, creadora de velas artesanales que buscan llenar tu espacio de
-          calma, aroma y amor...
+        <div className="sobremi-content">
+          <p className="text-description" style={{color: 'var(--color-texto)'}}>
+            Soy Be, creadora de velas artesanales que buscan llenar tu espacio de
+            calma, aroma y amor. Cada producto está hecho con dedicación y cuidado,
+            utilizando materiales naturales y sustentables.
+          </p>
           <Link to="/sobremi" className="btn-mas-info">
-          Conocé más
-        </Link>
-        </p>
-        
+            Conocé más
+          </Link>
+        </div>
       </section>
     </>
   );

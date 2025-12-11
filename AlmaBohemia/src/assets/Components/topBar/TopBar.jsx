@@ -9,7 +9,7 @@ export default function TopBar(){
 
     return(
         
-            <div className="topBar-position bg-topBar">
+            <div className="topBar-position">
                 <p className="contacto">Contacto</p>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="icons-topBar"><FaInstagram /></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="icons-topBar"><FaWhatsapp /></a>

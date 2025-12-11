@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import './App.css'
+// import './App.css'
 import './assets/variables.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useSelector } from 'react-redux';
@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Navbar from './assets/Components/Navbar/Navbar.jsx'
 import TopBar from './assets/Components/topBar/TopBar.jsx'
 import Footer from './assets/Components/Footer/Footer'
+import Loading from './assets/Components/Loading/Loading.jsx'
 
 const Home= lazy(()=> import ( './assets/Components/Home/Home.jsx'))
 const Producto1 = lazy(()=> import('./assets/Components/Navbar/Producto1/Producto1.jsx') )
@@ -31,9 +32,7 @@ function App () {
 
   useEffect(()=>{
     localStorage.setItem('carrito', JSON.stringify(carrito))
-  },[carrito]
-
-)
+  },[carrito])
   return(
   <>
  
@@ -41,9 +40,10 @@ function App () {
 
     <div className='app-grid'>
         <Navbar/>
-      <div className='bg-main main-content'>
+      {/* <div className='bg-main main-content'> */}
+        <div className='main-content' style={{backgroundColor: 'var(--color-fondo)'}}>
       <TopBar/>
-    <Suspense fallback= {<div>Cargando...</div>}>
+    <Suspense fallback={<Loading />}>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Producto1' element={<Producto1/>}/>
@@ -72,7 +72,8 @@ function App () {
       closeOnClick
       rtl={false}
       pauseOnHover
-      theme="dark"
+      theme="light"
+      toastClassName="custom-toast"
       />
     </>)
 }

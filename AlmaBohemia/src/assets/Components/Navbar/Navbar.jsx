@@ -21,7 +21,8 @@ const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="navbar-content bg-aside">
+
+      <div className="navbar-content">
       <aside className=" aside">
           <NavLink to={"/"}>
             <img className="logo-navbar mb-4" src="/logo-alma1.png" alt="logo" />

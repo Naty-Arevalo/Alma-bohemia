@@ -1,10 +1,11 @@
 :root{
-    /*Colores*/
-    --color-primario:#872e9d;
-    --color-secundario: #F9F5FF;
-    --color-acento: #8A4FFF;
-    --color-texto: #333;
-    --color-blanco: #ffffff;
+    /*Colores - Bohemia Rosa Terroso*/
+    --color-primario: #B88A7A;       /* Rosa terroso */
+    --color-secundario: #F8F1ED;     /* Beige rosado */
+    --color-acento: #D4A574;         /* Dorado melocotón */
+    --color-texto: #3D2817;          /* Marrón oscuro */
+    --color-blanco: #FFFFFF;
+    --color-fondo: #FFFBF7;          /* Blanco cálido */
 
 
     /*Fuentes*/
@@ -29,24 +30,24 @@
 }
 
 /*Fondos*/
-.bg-fondo{
+/* .bg-fondo{
     background-color: var(--color-primario);
 }
 .bg-navbar{
-    background: #bb853878;
+    background: rgba(184, 138, 122, 0.47);
 }
 .bg-main{
-    background: #bf86343d;
+    background: rgba(184, 138, 122, 0.24);
 }
 .bg-aside{
-    background: #bb853869;
+    background: rgba(184, 138, 122, 0.41);
 }
 .bg-topBar{
-    background: #bb853838;
+    background: rgba(184, 138, 122, 0.22);
 }
 .bg-nav-button{
-    background: #dfc49ceb;
-}
+    background: rgba(212, 165, 116, 0.92);
+} */
 
 
 
@@ -66,11 +67,11 @@
 }
 
 .btn-primario{
-    background-color: rgb(226 197 147 / 77%) !important;
-    color:#333;
+    background-color: rgba(184, 138, 122, 0.77) !important;
+    color: var(--color-texto);
 }
 .btn-primario:hover{
-    background-color: rgb(226 197 147 /95%) !important;
+    background-color: rgba(184, 138, 122, 0.95) !important;
 }
 
 .btn-acento{
@@ -79,5 +80,11 @@
     color: var(--color-blanco);
 }
 .btn-acento:hover{
-    background-color: #6b2fdd;
+    background-color: #B88A7A;
+}
+
+/* Toast personalizado */
+:global(.custom-toast) {
+    background-color: var(--color-primario) !important;
+    color: var(--color-blanco) !important;
 }

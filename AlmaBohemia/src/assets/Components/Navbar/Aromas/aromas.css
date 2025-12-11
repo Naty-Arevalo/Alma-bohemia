@@ -4,7 +4,7 @@
     margin: 2rem 0;
     position: relative;
     font-family: var(--font-titulo, 'Playfair Display', serif);
-    color: #3b3b3b;
+    color: var(--color-texto);
 
 }
 .container-aromas{
@@ -16,7 +16,7 @@
     justify-items: center;
 }
 .list-container-aromas{
-    background-color: #fdfdfd;
+    background-color: var(--color-secundario);
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
@@ -29,12 +29,12 @@
  .title-aromas{
    font-size: 1.4rem;
    margin-bottom: 0.8rem;
-   color: #5c3d2e;
+   color: var(--color-texto);
    font-weight: bold;
  }
 .parrafo-aromas{
     font-size: 1rem;
-    color: #444;
+    color: var(--color-texto);
     line-height: 1.5;
     font-family: var(--font-texto, sans-serif);
 }

@@ -1,4 +1,14 @@
+/* @import "tailwindcss"; */
 @import "tailwindcss";
+
+:root{
+  --color-principal: #B88A7A;       /* Rosa terroso */
+  --color-secundario: #F8F1ED;      /* Beige rosado */
+  --color-acento: #D4A574;          /* Dorado melocotón */
+  --color-fondo: #FFFBF7;           /* Blanco cálido */
+  --color-texto: #3D2817;           /* Marrón oscuro */
+}
+
 
 *{
   margin: 0 ;
